@@ -126,3 +126,44 @@ setInitialTheme(),
     addThemeSwitcher();
   }),
   document.addEventListener('DOMContentLoaded', onPageLoad);
+
+/**
+ * CODE FOR OUTBOUND CLICK TRACK SIMPLE ANALYTICS
+*/
+(function () {
+  function get_params_from_href(href) {
+    var paramstr = href.split('?')[1];        // get what's after '?' in the href
+    var paramsarr = paramstr.split('&');      // get all key-value items
+    var params = {};
+    for (var i = 0; i < paramsarr.length; i++) {
+      var tmparr = paramsarr[i].split('='); // split key from value
+      params[tmparr[0]] = tmparr[1];        // sort them in a obj[key] = value way
+    }
+    return params;
+  }
+
+  function saLoadedLinkEvents() {
+    document
+      .querySelectorAll("a[href*='utm_sa_link_event']")
+      .forEach(function (element) {
+        var href = element.getAttribute("href");
+        var params = get_params_from_href(href);
+        var eventName = params.utm_sa_link_event;
+        
+        if (!href || !window.sa_event || !window.sa_loaded) return;
+
+        element.addEventListener("click", function (event) {
+          window.sa_event(eventName);
+          return true;
+        });
+      });
+  }
+
+  if (document.readyState === "ready" || document.readyState === "complete") {
+    saLoadedLinkEvents();
+  } else {
+    document.addEventListener("readystatechange", function (event) {
+      if (event.target.readyState === "complete") saLoadedLinkEvents();
+    });
+  }
+})();
