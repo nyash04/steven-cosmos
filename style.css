@@ -17,6 +17,8 @@
   --scrollbar-color: #383838!important;
   --footer-text-color: var(--color-text-default) !important;
   --color-text-default-light: var(--color-text-default) !important;
+  --transition-duration: 0.5s;
+  --transition-function: ease-in-out;
 }
 ::-webkit-scrollbar {
   width: 0.25rem;
@@ -272,7 +274,7 @@ h3.notion-heading {
   padding: 9px !important;
   border: 1px solid var(--color-border-default);
   border-radius: var(--border-radius) !important;
-  transition: background .2s ease !important;
+  transition: background var(--transition-duration) var(--transition-function) !important;
   margin: 5px 0px !important;
 }
 
@@ -373,7 +375,7 @@ h3.notion-heading {
 .notion-collection-card__cover,
 .notion-collection-card__cover>span,
 .notion-collection-card__cover img {
-  transition: transform .2s ease-in-out !important;
+  transition: transform var(--transition-duration) var(--transition-function) !important;
 }
 
 .notion-collection-card:hover .notion-collection-card__cover img {
@@ -483,7 +485,7 @@ h3.notion-heading {
   font-weight: 500 !important;
   display: inline-flex !important;
   justify-content: center !important;
-  transition: opacity .2s ease-in-out !important;
+  transition: opacity var(--transition-duration) var(--transition-function) !important;
   background: var(--color-cta-background) !important;
   color: var(--color-cta-text) !important;
 }
@@ -745,11 +747,11 @@ html::-webkit-scrollbar-track {
     margin: 10px 10px;
     border: 1px solid var(--color-border-default) !important;
     border-radius: var(--border-radius) !important;
-    transition: background .2s ease-in-out !important;
+    transition: background var(--transition-duration) var(--transition-function) !important;
   }
 
   .notion-dropdown__option p {
-    transition: color .2s ease-in-out !important;
+    transition: color var(--transition-duration) var(--transition-function) !important;
     color: var(--color-grey) !important;
     font-size: 18px !important;
   }
@@ -774,7 +776,7 @@ html::-webkit-scrollbar-track {
   opacity: .7 !important;
   width: 22px !important;
   height: 22px !important;
-  transition: all .2s ease-in-out !important;
+  transition: all var(--transition-duration) var(--transition-function) !important;
   margin-right: 25px !important;
   margin-left: -10px !important;
 }
