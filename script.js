@@ -91,8 +91,6 @@ function addThemeSwitcher() {
     : console.info('You need to add a navbar to the page.');
 }
 function onPageLoad() {
-  addThemeSwitcher();
-  
   const e = document.querySelector('.notion-header'),
     t = document.querySelectorAll('.notion-dropdown__option'),
     r = document.querySelector('.notion-dropdown__button-title'),
@@ -125,6 +123,6 @@ function onPageLoad() {
 }
 setInitialTheme(),
   (window.onload = function () {
-    // addThemeSwitcher();
+    addThemeSwitcher();
   }),
   document.addEventListener('DOMContentLoaded', onPageLoad);
