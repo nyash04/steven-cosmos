@@ -483,9 +483,13 @@ h3.notion-heading {
   font-weight: 500 !important;
   display: inline-flex !important;
   justify-content: center !important;
-  transition: background .5s ease-in-out !important;
+  transition: opacity .5s ease-in-out !important;
   background: var(--color-cta-background) !important;
   color: var(--color-cta-text) !important;
+}
+
+.notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link:hover {
+  opacity: 0.8 !important;
 }
 
 .notion-caption {
