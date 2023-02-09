@@ -91,10 +91,8 @@ function addThemeSwitcher() {
     : console.info('You need to add a navbar to the page.');
 }
 function onPageLoad() {
-
-  console.log('page load', document.querySelector('.super-navbar'))
   addThemeSwitcher();
-
+  
   const e = document.querySelector('.notion-header'),
     t = document.querySelectorAll('.notion-dropdown__option'),
     r = document.querySelector('.notion-dropdown__button-title'),
