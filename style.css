@@ -507,10 +507,10 @@ h3.notion-heading {
 }
 
 .notion-text .notion-text__content .notion-semantic-string span .notion-link {
-  border-bottom: 0 !important;
+  opacity: 1 !important;
 }
 
-.notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link:hover {
+.notion-text .notion-text__content .notion-semantic-string span .notion-link:hover {
   opacity: 0.8 !important;
 }
 
