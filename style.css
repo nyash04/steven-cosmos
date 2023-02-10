@@ -497,7 +497,7 @@ h3.notion-heading {
   margin: 20px 0px !important;
   padding: 0.5rem 0.75rem !important;
   border-radius: var(--border-radius) !important;
-  opacity: 1 !important;
+  opacity: 0.8 !important;
   font-weight: 500 !important;
   display: inline-flex !important;
   justify-content: center !important;
@@ -507,7 +507,7 @@ h3.notion-heading {
 }
 
 .notion-root .notion-text .notion-text__content .notion-semantic-string span strong .notion-link:hover {
-  opacity: 0.8 !important;
+  opacity: 1 !important;
 }
 
 .notion-caption {
