@@ -370,7 +370,7 @@ h3.notion-heading {
 }
 
 .notion-property__title .notion-semantic-string {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .notion-collection-gallery.small .notion-collection-card__content {
