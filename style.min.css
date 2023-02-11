@@ -131,6 +131,7 @@ body {
   padding-left: 0px !important;
   padding-right: 0px !important;
   max-width: var(--max-width) !important;
+  margin: auto !important;
 }
 
 .super-navbar {
@@ -852,4 +853,8 @@ html::-webkit-scrollbar-track {
 
 .super-navbar__menu-wrapper .enter-done {
   position: absolute !important;
+}
+
+.notion-header__description {
+  text-align: center !important;
 }
