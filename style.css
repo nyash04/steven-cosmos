@@ -379,6 +379,11 @@ h3.notion-heading {
   font-size: 16px !important;
 }
 
+.notion-collection-card__property-list {
+  margin-top: -15px !important;
+  padding: 0 25px 25px 25px !important;
+}
+
 .notion-collection-gallery.small .notion-property__date {
   margin-bottom: 15px !important;
   font-size: 14px !important;
