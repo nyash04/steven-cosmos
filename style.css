@@ -1,7 +1,7 @@
 :root {
   --color-bg-default: #000000 !important;
   --color-text-default: #f2f2f2 !important;
-  --color-border-default: #242424 !important;
+  /* --color-border-default: #242424 !important; */
   --color-card-bg: transparent !important;
   --color-hover-default: #111111 !important;
   --color-bg-glass-default: rgb(255 255 255/3%) !important;
@@ -572,6 +572,10 @@ code>span {
 .notion-callout {
   border-radius: var(--border-radius) !important;
   padding-left: 18px !important;
+}
+
+.notion-callout.border {
+  border-color: var(--color-border-default) !important; 
 }
 
 .notion-image img,
