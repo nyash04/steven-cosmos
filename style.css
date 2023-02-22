@@ -114,6 +114,12 @@ body {
   margin: auto !important;
 }
 
+.notion-header__content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width: var(--max-width) !important;
+}
+
 .super-footer,
 .super-navbar {
   background: var(--color-bg-glass-default) !important;
@@ -164,6 +170,10 @@ body {
 .notion-header__title,
 .notion-toggle.bg-gray {
   display: none !important;
+}
+
+.notion-header__title {
+  display: block !important;
 }
 
 .notion-header__cover.has-cover {
@@ -409,6 +419,10 @@ pre {
   }
 
   .super-content {
+    padding: 0 20px !important;
+  }
+
+  .notion-header__content {
     padding: 0 20px !important;
   }
 
