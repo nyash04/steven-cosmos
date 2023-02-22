@@ -49,7 +49,7 @@ h1.notion-heading {
   --transition-function: ease-in-out;
 }
 
-body {
+:root {
   --color-navbar-cta-text: var(--color-text-default) !important;
   --color-navbar-cta-bg: rgba(0, 0, 0, 0.1) !important;
   --color-hover-default: #efebea !important;
